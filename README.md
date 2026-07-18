@@ -2,6 +2,12 @@
 
 Luminate Installer is an elegant package conversion and installation desktop utility. It provides a modern GUI to convert Debian packages (`.deb`), AppImages, and other formats into Arch Linux native packages and install them seamlessly.
 
+> [!TIP]
+> **Quick Install (Arch Linux):**
+> ```bash
+> curl -sSL https://raw.githubusercontent.com/manuety/luminate-installer/main/install.sh | bash
+> ```
+
 ![Luminate Installer Logo](luminate-installer.svg)
 
 ## Features
