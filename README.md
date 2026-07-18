@@ -53,15 +53,6 @@ luminate-installer
 
 ---
 
-## Screenshots
-### Main Interface Logo
-![App Logo](screenshots/app_logo.png)
-
-### Package Conversion Progress
-![Conversion Output](screenshots/console_output.png)
-
----
-
 ## Contributors
 - **[manuety](https://github.com/manuety)** — Original Author & Developer
 - **[Google Antigravity](https://github.com/google-antigravity)** — AI Pair Programmer (Wayland stability patches, PKGBUILD setups, and Debian packaging)
