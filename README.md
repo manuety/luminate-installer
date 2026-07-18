@@ -14,9 +14,18 @@ Luminate Installer is an elegant package conversion and installation desktop uti
 
 ## Installation
 
-### 1. Install on Arch Linux (via Pacman)
+### 1. Direct Install (Recommended — No Repository Required)
 
-To install the package using the custom `pacman` repository:
+For a quick installation on Arch Linux without setting up any repositories, run the following command to clone, build, and install the utility:
+```bash
+curl -sSL https://raw.githubusercontent.com/manuety/luminate-installer/main/install.sh | bash
+```
+
+---
+
+### 2. Install via Pacman Custom Repository (Optional)
+
+If you prefer managing updates through a local package repository:
 
 1. Add the custom repository to your `/etc/pacman.conf`:
    ```ini
@@ -29,9 +38,11 @@ To install the package using the custom `pacman` repository:
    sudo pacman -Sy luminate-installer
    ```
 
-### 2. Install on Debian/Ubuntu (via APT)
+---
 
-To install the package using the custom `APT` repository:
+### 3. Install on Debian/Ubuntu (via APT)
+
+To install the package on Debian/Ubuntu using the custom `APT` repository:
 
 1. Add the repository to your `/etc/apt/sources.list.d/luminate.list`:
    ```text
