@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luminate Installer — Elegant Package Conversion & Installation</title>
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Vibrant background gradients -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="logo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                </svg>
+                <h1>Luminate Installer</h1>
+            </div>
+            <p class="subtitle">Drag, convert, and install packages onto your Arch Linux system seamlessly.</p>
+        </header>
+
+        <!-- System Status Bar -->
+        <div class="status-bar glass">
+            <div class="status-item" id="sys-arch">
+                <span class="indicator"></span>
+                <span class="text">Checking system...</span>
+            </div>
+            <div class="status-item" id="sys-debtap">
+                <span class="indicator"></span>
+                <span class="text">Checking Debtap...</span>
+            </div>
+        </div>
+
+        <main>
+            <!-- Drop Zone Container -->
+            <div class="glass drop-zone-container">
+                <div id="drop-zone" class="drop-zone">
+                    <input type="file" id="file-input" class="file-input" accept=".deb,.appimage,.zst,.xz">
+                    <div class="drop-zone-content">
+                        <div class="upload-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
+                            </svg>
+                        </div>
+                        <h3>Drag & Drop Package</h3>
+                        <p class="file-types">Supports <strong>.deb</strong> (auto-converts), <strong>.AppImage</strong>, or <strong>.pkg.tar.zst</strong></p>
+                        <button class="btn btn-primary">Browse Files</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Task Progress Console -->
+            <div id="task-card" class="glass task-card hidden">
+                <div class="task-header">
+                    <div class="task-info">
+                        <span class="badge" id="task-badge">Processing</span>
+                        <h4 id="task-filename">app_package.deb</h4>
+                    </div>
+                    <button id="btn-cancel" class="btn btn-danger btn-sm">Cancel Installation</button>
+                </div>
+
+                <!-- Progress Bar -->
+                <p id="task-context" class="task-context">Initializing...</p>
+                <div class="progress-container">
+                    <div class="progress-bar-wrapper">
+                        <div id="progress-bar" class="progress-bar" style="width: 0%"></div>
+                    </div>
+                    <span id="progress-percent" class="progress-percent">0%</span>
+                </div>
+
+                <!-- Pipeline Stages -->
+                <div class="stages">
+                    <div class="stage" id="stage-upload">
+                        <div class="stage-dot"></div>
+                        <span class="stage-label">Uploaded</span>
+                    </div>
+                    <div class="stage" id="stage-convert">
+                        <div class="stage-dot"></div>
+                        <span class="stage-label">Converting</span>
+                    </div>
+                    <div class="stage" id="stage-install">
+                        <div class="stage-dot"></div>
+                        <span class="stage-label">Installing</span>
+                    </div>
+                    <div class="stage" id="stage-complete">
+                        <div class="stage-dot"></div>
+                        <span class="stage-label">Completed</span>
+                    </div>
+                </div>
+
+                <!-- Live Log Terminal -->
+                <div class="terminal-container">
+                    <div class="terminal-header">
+                        <span>Console Output</span>
+                        <span class="terminal-actions">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </span>
+                    </div>
+                    <pre id="terminal-logs" class="terminal-logs">Initializing console log...</pre>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Luminate Installer. Designed with Glassmorphic aesthetics & pro-grade reliability.</p>
+        </footer>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

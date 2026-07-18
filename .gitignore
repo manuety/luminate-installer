@@ -1,0 +1,18 @@
+# Caches
+__pycache__/
+*.pyc
+
+# Package build intermediates
+pkg/
+src/
+luminate-installer/
+
+# Package outputs (binaries)
+*.pkg.tar.zst
+*.deb
+Packages
+Packages.gz
+
+# Local user directories
+uploads/
+converted/

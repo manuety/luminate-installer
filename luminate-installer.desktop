@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Luminate Installer
+Comment=Convert and install Debian packages, AppImages, and Arch Linux packages
+Exec=luminate-installer
+Icon=luminate-installer
+Terminal=false
+StartupWMClass=luminate-installer
+Categories=System;Utility;
+Keywords=package;install;installer;deb;convert;
+

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22c55e" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+  </defs>
+  <!-- Background glass plate -->
+  <rect width="512" height="512" rx="128" fill="url(#bg)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="8"/>
+  <!-- Glowing icon container -->
+  <g transform="translate(128, 128)">
+    <!-- Package box wireframe -->
+    <path d="M128 32 L32 80 L128 128 L224 80 Z" fill="none" stroke="url(#glow)" stroke-width="16" stroke-linejoin="round"/>
+    <path d="M32 80 L32 208 L128 256 L128 128" fill="none" stroke="url(#glow)" stroke-width="16" stroke-linejoin="round"/>
+    <path d="M224 80 L224 208 L128 256" fill="none" stroke="url(#glow)" stroke-width="16" stroke-linejoin="round"/>
+    <!-- Central arrow pointing down -->
+    <path d="M128 10 L128 90" fill="none" stroke="#ffffff" stroke-width="16" stroke-linecap="round"/>
+    <path d="M96 58 L128 90 L160 58" fill="none" stroke="#ffffff" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
